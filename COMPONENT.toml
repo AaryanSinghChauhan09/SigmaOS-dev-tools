@@ -1,0 +1,9 @@
+[component]
+name = "SigmaOS-dev-tools"
+description = "SigmaOS subsystem component for dev-tools"
+version = "0.1.0"
+tier = 2
+
+[capabilities]
+contract_version = "1.0.0"
+principles = ["DRY", "KISS", "SOLID", "Arrange-Act-Assert", "Pristine-Sources"]
