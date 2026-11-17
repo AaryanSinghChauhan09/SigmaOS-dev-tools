@@ -1,6 +1,6 @@
 [component]
 name = "SigmaOS-dev-tools"
-description = "SigmaOS subsystem component for dev-tools"
+description = "Developer toolchain helpers"
 version = "0.1.0"
 tier = 2
 
