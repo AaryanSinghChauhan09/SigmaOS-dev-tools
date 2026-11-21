@@ -1,6 +1,6 @@
 # SigmaOS-dev-tools
 
-Developer toolchain helpers
+Development tools for SigmaOS inspired by SigmaOS Linux
 
 - **Category:** Developer Tools
 - **Engine:** dev_tools

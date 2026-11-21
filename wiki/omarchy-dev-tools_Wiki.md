@@ -1,7 +1,7 @@
 # SigmaOS-SigmaOS-dev-tools Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-dev-tools provides Developer toolchain helpers for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-SigmaOS-dev-tools provides Development toolchain manager for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
 - Single Responsibility
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-dev-tools follows a SigmaOS-dev-tools pattern:
 
 ## API
 The component provides the following public APIs:
-- `core::manage(SigmaOS-dev-tools)` - Manage a SigmaOS-dev-tools by given configuration
-- `core::register(SigmaOS-dev-tools)` - Register a SigmaOS-dev-tools by given name
-- `core::status::SigmaOS-dev-tools()` - Get SigmaOS-dev-tools status and SigmaOS-dev-tools availability
-- `core::track::SigmaOS-dev-tools()` - Track SigmaOS-dev-tools management and SigmaOS-dev-tools tracking
+-  - Manage a SigmaOS-dev-tools by given configuration
+-  - Register a SigmaOS-dev-tools by given name
+-  - Get SigmaOS-dev-tools status and SigmaOS-dev-tools availability
+-  - Track SigmaOS-dev-tools management and SigmaOS-dev-tools tracking
 - Error types for SigmaOS-dev-tools failure scenarios or unsupported SigmaOS-dev-tools types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -33,24 +33,10 @@ All tests follow the AAA pattern:
 3. **Assert**: Verify the expected SigmaOS-dev-tools results
 
 Example:
-```rust
-#[test]
-fn test_SigmaOS-dev-tools_aaa() {
-    // Arrange
-    let SigmaOS-dev-tools = SigmaOS-dev-tools::new("my-SigmaOS-dev-tools");
-    
-    // Act
-    let result = core::manage(SigmaOS-dev-tools);
-    
-    // Assert
-    assert!(result.is_ok());
-    let managed = result.unwrap();
-    assert!(managed.is_managed());
-}
-```
+
 
 ## Development
-- Follows Rust best practices with `#![forbid(unsafe_code)]`
+- Follows Rust best practices with 
 - SigmaOS-dev-tools initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-dev-tools failure scenarios
 - Unit tests provided for SigmaOS-dev-tools management and configuration
